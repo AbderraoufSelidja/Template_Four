@@ -17,6 +17,9 @@
 .d-flex {
     display: flex;
 }
+.align-center {
+    align-items: center;
+}
 .f-wrap {
     flex-wrap: wrap;
 }
@@ -70,6 +73,9 @@
 .m-0 {
     margin: 0;
 }
+.m-15 {
+    margin: 15px;
+}
 .m-20 {
     margin: 20px;
 }
@@ -108,6 +114,9 @@
 }
 .mb-20 {
     margin-bottom: 20px;
+}
+.ml-5 {
+    margin-left: 5px;
 }
 .ml-10 {
     margin-left: 10px;
