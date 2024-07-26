@@ -88,12 +88,12 @@ a {
 }
 /* End Components */
 .page {
-  min-height: 600vh;
+  min-height: 100vh;
   background-color: #f1f5f9;
 }
 /* Start Sidebar */
 .sidebar {
-  width: 250px;
+  width: 200px;
   box-shadow: 0 0 10px #ddd;
 }
 @media (max-width: 767px) {
@@ -713,7 +713,7 @@ a {
   border: 2px solid #eee;
   position: relative;
   flex: 1;
-  transition: border-color .2s, color .1s;
+  transition: border-color 0.2s, color 0.1s;
 }
 .backup-control .servers input[type="radio"]:checked + .server {
   border-color: var(--blue-color);
@@ -723,8 +723,266 @@ a {
   cursor: pointer;
 }
 /* end settings */
+/* Start profile */
+@media (max-width: 767px) {
+  .profile-page .overview {
+    flex-direction: column;
+  }
+}
+.profile-page .avatar-box {
+  width: 260px;
+}
+@media (min-width: 768px) {
+  .profile-page .avatar-box {
+    border-right: 1px solid #eee;
+  }
+}
+.profile-page .avatar-box > img {
+  width: 120px;
+  height: 120px;
+}
+.profile-page .avatar-box .level {
+  height: 6px;
+  overflow: hidden;
+  margin: auto;
+  width: 70%;
+}
+.profile-page .avatar-box .level span {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--blue-color);
+  border-radius: 6px;
+}
+.profile-page .info-box .box {
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+.profile-page .info-box h4 {
+  font-weight: normal;
+}
+.profile-page .info-box .box > div {
+  min-width: 250px;
+  padding: 10px 0 0;
+}
+@media (max-width: 767px) {
+  .profile-page .info-box .toggle-switch {
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .profile-page .other-data {
+    flex-direction: column;
+  }
+}
+.profile-page .other-data .skills-card {
+  flex: 1;
+}
+.profile-page .other-data .activities {
+  flex: 2;
+}
+.profile-page .other-data .skills-card li {
+  padding: 15px 0px;
+}
+.profile-page .other-data .skills-card li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.profile-page .other-data .skills-card li span {
+  display: inline-block;
+  background-color: #eee;
+  margin-right: 5px;
+  font-size: 14px;
+}
+.profile-page .activity:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+/* end profile */
+/* start projects */
+.projects-page .project .date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.projects-page .project .team {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.projects-page .project .team img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.projects-page .project .team a:not(:first-child) img {
+  margin-left: -20px;
+}
+.projects-page .project .team a {
+  position: relative;
+}
+.projects-page .project .team a:hover {
+  z-index: 1000;
+}
+.projects-page .project .do {
+  justify-content: flex-end;
+  gap: 5px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.projects-page .project .do span {
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .projects-page .project .do {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
+.projects-page .project .prog {
+  height: 8px;
+  width: 260px;
+  position: relative;
+  border-radius: 6px;
+}
+.projects-page .project .prog span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+}
 
-/* Start Animation */
+@media (max-width: 767px) {
+  .projects-page .project .info {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* end projects */
+/* Start Courses */
+.courses-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.courses-page .course {
+  overflow: hidden;
+}
+.courses-page .course .avatar {
+  max-width: 100%;
+}
+.courses-page .course .profile {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  border: 2px solid white;
+}
+.courses-page .course > div p {
+  line-height: 1.6;
+}
+
+.courses-page .info {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+.courses-page .course .info div {
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% -50%;
+}
+.courses-page .course .info span i {
+  margin-right: 5px;
+}
+/* End Courses */
+/* Start profile */
+
+@media (max-width: 767px) {
+  .profile-page .activity {
+    flex-direction: column;
+  }
+}
+.profile-page .activities img {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .profile-page .activity img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .profile-page .activity .date {
+    flex: 1;
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .profile-page .activity .date {
+    margin-top: 15px;
+  }
+}
+/*end profile  */
+/* start friends */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.friends-page .friend .contact {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.friends-page .friend .contact i {
+  background: #eee;
+  border-radius: 50%;
+  padding: 10px;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.friends-page .friend .contact i:hover {
+  background-color: var(--blue-color);
+  color: white;
+}
+.friends-page .friend .avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+.friends-page .friend .icons {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.friends-page .friend .icons div i {
+  margin-right: 5px;
+}
+.friends-page .friend .icons .vip {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  opacity: 0.2;
+}
+.friends-page .friend .info button {
+  border: none;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.friends-page .friend .info button:first-child:hover {
+  background-color: var(--blue-alt-color);
+}
+.friends-page .friend .info button:last-child:hover {
+  background-color: var(--red-alt-color);
+}
+/* end friends */
+/* start Animation */
 @keyframes change-bg-color {
   50% {
     background-color: var(--blue-color);

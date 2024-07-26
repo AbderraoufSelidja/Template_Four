@@ -6,6 +6,7 @@
     --orange-color: #f59e0b;
     --green-color: #22c55e;
     --red-color: #f44336;
+    --red-alt-color: #ec190a;
     --grey-color: #888;
     --main-transition: .3s;
 }
@@ -55,17 +56,23 @@
 .p-20 {
     padding: 20px;
 }
+.pt-10 {
+    padding-top: 10px;
+}
 .pt-15 {
     padding-top: 15px;
 }
 .pt-20 {
     padding-top: 20px;
 }
+.pb-10 {
+    padding-bottom: 10px;
+}
 .pb-15 {
     padding-bottom: 15px;
 }
 .pb-20 {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 .pl-15 {
     padding-left: 20px;
@@ -89,13 +96,13 @@
     margin-top: 10px;
 }
 .mt-15 {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .mt-20 {
     margin-top: 20px;
 }
 .mt-25 {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .mr-15 {
     margin-right: 15px;
